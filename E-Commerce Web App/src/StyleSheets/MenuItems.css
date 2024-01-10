@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&display=swap");
+
+/* * {
+  font-family: "Josefin Sans", sans-serif;
+} */
+
+.main-heading {
+  color: #5d4037;
+}
+
+.Item-inside {
+  height: fit-content;
+  border-radius: 12px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.Item-inside:hover img,
+.Item-inside:hover .btn {
+  transform: scale(1.1);
+}
+
+img {
+  padding: 0;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-title h1 {
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.price-book-divide h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #4db6ac;
+}
+
+.price-book-divide {
+  margin-bottom: 10px;
+}
+
+.row {
+  margin-right: 0;
+  margin-left: 0px;
+}
+
+.btn-primary {
+  background-color: #4db6ac;
+  outline: none;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #00695c;
+  outline: none;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: black;
+  color: whitesmoke;
+  outline: none;
+}
+
+
+/* MenuItems */
+.covidBox{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-top: 3rem;
+}
+.card{
+  width: 100%;
+  /* transition: transform 2s; */
+}
+.card__main{
+  padding: 5px;
+}
+.card:hover{
+  cursor: pointer;
+  /* transform: rotate(360deg); */
+}
+.card__back{
+  transform: rotate(180deg) scale(1.1);
+  background: #141414;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card__back span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card__name{
+  font-size: 32px;
+  line-height: 0.9;
+  font-weight: 700;
+}
+
+.card__name span{
+  font-size: 14px;
+}
+
+.card__total{
+  margin: 0 8px 0 0;
+}
+
+.card__small{
+  font-size: 50px;
+}
+@media (max-width: 700px){
+  .card__total{
+    font-size: 50px;
+  }
+}
+@media (max-width: 700px){
+  .card{
+    width: 100%;
+    height: fit-content;
+    margin-right: 0;
+    float: none;
+  }
+  .card .card__inner, .card .card__back{
+    height: fit-content;
+  }
+  .covidBox{
+    grid-template-columns: auto;
+    margin-top: 3rem;
+  }
+  .covidBox p{
+    font-size: 2rem;
+  }
+}
